@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support - Agentic Champion</title>
+  <style>
+    :root {
+      --primary: #52796f;
+      --primary-dark: #354f52;
+      --bg: #fafaf9;
+      --card: #ffffff;
+      --text: #292524;
+      --muted: #78716c;
+      --border: #e7e5e4;
+      --accent-bg: #f0fdf4;
+      --accent-border: #dcfce7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 32px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    h2 {
+      font-size: 20px;
+      color: var(--primary-dark);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 16px;
+      color: var(--text);
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+    p, ul, ol {
+      margin-bottom: 16px;
+      color: var(--text);
+      font-size: 15px;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .contact-card {
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      padding: 24px;
+      border-radius: 14px;
+      margin: 24px 0 16px 0;
+      text-align: center;
+    }
+    .contact-card h3 {
+      font-size: 18px;
+      color: var(--primary-dark);
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+    .contact-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    .contact-email {
+      display: inline-block;
+      background: var(--primary);
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: background 0.15s ease;
+    }
+    .contact-email:hover {
+      background: var(--primary-dark);
+    }
+    .community-card {
+      background: #ffffff;
+      border: 1.5px solid var(--border);
+      padding: 24px;
+      border-radius: 14px;
+      margin: 16px 0 28px 0;
+      text-align: center;
+    }
+    .community-card h3 {
+      font-size: 18px;
+      color: var(--primary-dark);
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+    .community-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    .community-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      color: var(--primary);
+      border: 1.5px solid var(--primary);
+      padding: 12px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.15s ease;
+    }
+    .community-button:hover {
+      background: var(--accent-bg);
+      border-color: var(--primary-dark);
+      color: var(--primary-dark);
+    }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 12px;
+      background: #ffffff;
+    }
+    .faq-item h3 {
+      margin-top: 0;
+      font-size: 16px;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+    .faq-item p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .nav-footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .nav-links a {
+      color: var(--primary);
+      text-decoration: none;
+      margin-left: 16px;
+      font-weight: 500;
+    }
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Help & Support</div>
+      <h1>Agentic Champion Support</h1>
+      <p class="subtitle">We're here to help you protect your attention and build daily momentum.</p>
+    </header>
+
+    <div class="contact-card">
+      <h3>Have Questions or Need Assistance?</h3>
+      <p>Whether you're encountering technical issues, have questions about your subscription, or want to share feedback, we're ready to assist.</p>
+      <a href="mailto:purposefuldrivenllc@gmail.com" class="contact-email">Email: purposefuldrivenllc@gmail.com</a>
+    </div>
+
+    <div class="community-card">
+      <h3>Closed Testing & Community Feedback</h3>
+      <p>Join our official Google Group to opt into closed testing builds, test new features, and join the discussion.</p>
+      <a href="https://groups.google.com/g/agentic-champion" target="_blank" rel="noopener noreferrer" class="community-button">
+        <span>Join Google Group (agentic-champion)</span>
+        <span>&rarr;</span>
+      </a>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>How do I cancel or manage my subscription?</h3>
+      <p><strong>iOS:</strong> Open the Settings app on your iPhone &gt; tap your Apple ID profile at the top &gt; Subscriptions &gt; select Agentic Champion to manage or cancel.<br>
+      <strong>Android:</strong> Open the Google Play Store app &gt; tap your profile icon at top right &gt; Payments &amp; subscriptions &gt; Subscriptions &gt; select Agentic Champion.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How does the 3-day free trial work?</h3>
+      <p>Eligible new subscribers receive full access to all companion features, study windows, and shielding tools for 3 days free of charge. You can cancel at any time in your device's subscription settings at least 24 hours before the trial ends to avoid being charged.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I restore my existing subscription on a new device?</h3>
+      <p>Ensure you are signed in with the same Apple ID or Google Play account that originally purchased the subscription. On the paywall screen inside the app, tap "Restore Purchases" to instantly reactivate your entitlement.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why is app shielding or screen time tracking not appearing?</h3>
+      <p>App shielding and distraction analytics require system permissions to function. On iOS, enable Screen Time permissions when prompted. On Android, grant "Usage Access" in your device Settings under Special App Access.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How can I request account or data deletion?</h3>
+      <p>You can request full deletion of your account and associated cloud data at any time by emailing us at <a href="mailto:purposefuldrivenllc@gmail.com" style="color: var(--primary);">purposefuldrivenllc@gmail.com</a> with the subject line "Account Deletion Request".</p>
+    </div>
+
+    <div class="nav-footer">
+      <span>&copy; 2026 Metric LLC. All rights reserved.</span>
+      <div class="nav-links">
+        <a href="index.html">Overview</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
